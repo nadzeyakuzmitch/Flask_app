@@ -5,5 +5,22 @@
 </head>
 <body>
     If you are not redirected, <a href="https://flask.palletsprojects.com/en/3.0.x">click here</a>.
+    <br>
+    <br>
+    Scan the QR code below to access the website:
+    <br>
+    <div id="qrcode"></div>
+
+    <!-- Include the qrcode.js library -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    
+    <!-- Generate the QR code image -->
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://flask.palletsprojects.com/en/3.0.x",
+            width: 128,
+            height: 128
+        });
+    </script>
 </body>
 </html>

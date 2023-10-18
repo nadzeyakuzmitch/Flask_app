@@ -1,6 +1,6 @@
 | Date       | Day       | Kevin Chavez Attendance | Nadzeya Kuzmitch Attendance | Robin Pierre Attendance |
 |------------|-----------|-------------------------|-----------------------------|-------------------------|
-| Oct 18     | Wednesday |        Check            |         Check               |                         |
+| Oct 18     | Wednesday |        Check            |                             |        Check            |
 | Oct 20     | Friday    |                         |                             |                         |
 | Oct 25     | Wednesday |                         |                             |                         |
 | Oct 27     | Friday    |                         |                             |                         |

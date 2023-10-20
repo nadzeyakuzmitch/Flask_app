@@ -1,26 +1,32 @@
-version: "3.8"
+version: '3.8'
 
 services:
   flask_app:
+    image: flask_qr_app:latest
     build:
       context: .
       dockerfile: Dockerfile
-    image: flask_qr_app:latest
     ports:
       - "5000:5000"
-    labels:
-      com.centurylinklabs.watchtower.enable: true
+    volumes:
+      - .:/app
+      - static-data:/app/static
+    environment:
+      - FLASK_RUN_HOST=0.0.0.0
+    command: flask run
 
   watchtower:
     image: containrrr/watchtower
-    networks:
-      - backend
-    container_name: watchtower 
-    command: --interval 30 --label-enable --cleanup
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    restart: always
+    command: --interval 3600  # Check for updates every hour
+    environment:
+      - WATCHTOWER_LABEL_ENABLE=1  # Only update containers with a com.centurylinklabs.watchtower.enable label set to true
+
+volumes:
+  static-data:
 
 networks:
-  backend:
-    external: true
+  default:
+    external:
+      name: flask_app_default

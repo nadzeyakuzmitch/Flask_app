@@ -1,5 +1,10 @@
 from flask import Flask, send_from_directory
 import qrcode
+import os
+
+if not os.path.exists("static"):
+    os.makedirs("static")
+
 
 app = Flask(__name__)
 

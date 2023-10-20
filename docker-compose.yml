@@ -19,5 +19,5 @@ volumes:
 
 networks:
   default:
-    external:
+    external: True
       name: flask_app_default

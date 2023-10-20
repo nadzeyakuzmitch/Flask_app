@@ -1,11 +1,14 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, send_file
+import qrcode
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
-    # Redirect to an external website, e.g., "https://www.example.com"
-    return redirect("https://flask.palletsprojects.com/en/3.0.x/")
+@app.route('/generate_qr')
+def generate_qr():
+    data = "https://flask.palletsprojects.com/en/3.0.x/"
+    img = qrcode.make(data)
+    img.save("qr.png")
+    return send_file("qr.png", mimetype='image/png')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0')

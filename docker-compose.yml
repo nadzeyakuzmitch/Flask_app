@@ -11,9 +11,7 @@ services:
     volumes:
       - .:/app
       - static-data:/app/static
-    environment:
-      - FLASK_RUN_HOST=0.0.0.0
-    command: flask run
+    command: ["python", "app.py"]
 
   watchtower:
     image: containrrr/watchtower

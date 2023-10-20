@@ -2,18 +2,14 @@ from flask import Flask, send_from_directory
 import qrcode
 import os
 
+app = Flask(__name__)
+
+# Ensure the 'static' directory exists
 if not os.path.exists("static"):
     os.makedirs("static")
 
-
-app = Flask(__name__)
-
 @app.route('/generate_qr', methods=['GET'])
 def generate_qr():
-    # Ensure the 'static' directory exists
-    if not os.path.exists("static"):
-        os.makedirs("static")
-
     # Create a QR code
     img = qrcode.make('https://flask.palletsprojects.com/en/3.0.x/')
     img.save("static/qr.png")

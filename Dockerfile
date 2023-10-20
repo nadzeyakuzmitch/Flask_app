@@ -1,10 +1,4 @@
-# Use a stable version of Python.
 FROM python:3.8-slim-buster
-
-# Set environment variables related to the QR code
-ENV QR_CODE_IMAGE_DIRECTORY='static'
-ENV QR_CODE_DEFAULT_URL='https://flask.palletsprojects.com/en/3.0.x/'
-ENV QR_CODE_DEFAULT_FILE_NAME='default.png'
 
 # Update the system packages and create a new user 'myuser'
 RUN apt-get update && \

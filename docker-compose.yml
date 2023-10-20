@@ -17,7 +17,7 @@ services:
     image: containrrr/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 3600  # Check for updates every hour
+    command: --interval 30  # Check for updates every hour
     environment:
       - WATCHTOWER_LABEL_ENABLE=1  # Only update containers with a com.centurylinklabs.watchtower.enable label set to true
 

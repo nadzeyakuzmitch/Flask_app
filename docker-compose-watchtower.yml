@@ -1,4 +1,7 @@
-watchtower:
+version: '3.8'
+
+services:
+  watchtower:
     image: containrrr/watchtower
     restart: always
     volumes:

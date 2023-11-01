@@ -4,7 +4,7 @@
 | Oct 20     | Friday    |        Check            |          Check              |                         |
 | Oct 25     | Wednesday |                         |                             |          Check          |
 | Oct 27     | Friday    |         Check           |      Check                  |                         |
-| Nov 1      | Wednesday |                         |                             |                         |
+| Nov 1      | Wednesday |         Check           |                             |                         |
 | Nov 3      | Friday    |                         |                             |                         |
 | Nov 8      | Wednesday |                         |                             |                         |
 | Nov 10     | Friday    |                         |                             |                         |

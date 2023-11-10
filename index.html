@@ -10,7 +10,11 @@
     Scan the QR code below to access the website:
     <br>
     <div id="qrcode"></div>
-
+    <form method="post">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+        <!-- your other form fields -->
+    </form>
+    
     <!-- Include the qrcode.js library -->
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     

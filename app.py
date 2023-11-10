@@ -1,7 +1,17 @@
 import Flask, send_from_directory
 import qrcode
+from flask_wtf.csrf import CSRFProtect
+
+# Setup CSRF protection
+csrf = CSRFProtect(app)
+
 
 app = Flask(__name__)
+# Set a secret key for CSRF protection
+app.config['SECRET_KEY'] = '12345'  # Change 'your-secret-key' to a real secret key
+
+# Setup CSRF protection
+csrf = CSRFProtect(app)
 
 @app.route('/')
 def serve_qr():

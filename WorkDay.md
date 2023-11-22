@@ -7,11 +7,10 @@
 | Nov 1      | Wednesday |         Check           |    Check                    |         Check           |
 | Nov 3      | Friday    |        Check            |     Check                   |         Check           |
 | Nov 8      | Wednesday |                         |        Check                |                         |
-| Nov 10     | Friday    |        Check            |                             |            Check        |
-| Nov 15     | Wednesday |                         |                             |                         |
-| Nov 17     | Friday    |                         |                             |                         |
-| Nov 22     | Wednesday |                         |                             |                         |
-| Nov 24     | Friday    |                         |                             |                         |
+| Nov 10     | Friday    |        Check            |          Check              |            Check        |
+| Nov 15     | Wednesday |                         |         Check               |                         |
+| Nov 17     | Friday    |                         |       Check                 |                         |
+| Nov 22     | Wednesday |                         |     Check                   |                         |
 | Nov 29     | Wednesday |                         |                             |                         |
 | Dec 1      | Friday    |                         |                             |                         |
 | Dec 6      | Wednesday |                         |                             |                         |

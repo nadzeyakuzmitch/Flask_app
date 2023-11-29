@@ -11,7 +11,7 @@
 | Nov 15     | Wednesday |                         |         Check               |                         |
 | Nov 17     | Friday    |                         |       Check                 |                         |
 | Nov 22     | Wednesday |                         |     Check                   |                         |
-| Nov 29     | Wednesday |                         |      Check                  |                         |
+| Nov 29     | Wednesday |     Check               |      Check                  |                         |
 | Dec 1      | Friday    |                         |                             |                         |
 | Dec 6      | Wednesday |                         |                             |                         |
 | Dec 8      | Friday    |                         |                             |                         |
